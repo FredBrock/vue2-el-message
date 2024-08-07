@@ -4,9 +4,7 @@
     <i class="el-message__closeBtn el-icon-close" @click="close">x</i>
   </div>
 </template>
-<style>
-
-</style>
+<style></style>
 <script>
 export default {
   data() {
@@ -14,6 +12,11 @@ export default {
       visible: false,
       message: "",
     };
+  },
+  methods: {
+    close() {
+      this.visible = false;
+    },
   },
 };
 </script>

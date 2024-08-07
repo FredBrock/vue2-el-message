@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Main from "./main.vue";
-
 let instance;
-let MessageConstructor = Vue.extend(Main);
+let MessageConstructor =  ;
+console.log(Main);
 const Message = function (options = {}) {
   if (typeof options === "string") {
     options = {
@@ -13,7 +13,9 @@ const Message = function (options = {}) {
     data: options,
   });
 
-  instance.$mount();
+  console.log(instance.$el); // 此时是undefined。
+  instance.$mount(); // 挂载 DOM
+  console.log(instance.$el); // 此时挂载后才有真实dom（<div class="el-message el-message--success"  >）。
   document.body.appendChild(instance.$el);
 };
 export default Message;
