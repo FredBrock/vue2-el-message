@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Main from "./main.vue";
 let instance;
-let MessageConstructor =  ;
+let MessageConstructor = Vue.extend(Main);
 console.log(Main);
 const Message = function (options = {}) {
   if (typeof options === "string") {
