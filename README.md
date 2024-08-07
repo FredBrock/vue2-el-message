@@ -1,6 +1,6 @@
 # vue2-el-message
 
-ElementUI $message Vue注册原理。
+实现 ElementUI $message 在Vue实例上。
 
 ## Project setup
 ```
