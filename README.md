@@ -1,5 +1,7 @@
 # vue2-el-message
 
+ElementUI $message Vue注册原理。
+
 ## Project setup
 ```
 npm install
